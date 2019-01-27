@@ -21,7 +21,7 @@ public class TestAbstractsFactory {
         // 2 抽象工厂获取新年系列的男孩
         System.out.println("2 抽象工厂获取新年系列的男孩");
         PersonFactory factory1 = new NewYearFactory();
-        BoyInterface boy = factory.getBoy();
+        BoyInterface boy = factory1.getBoy();
         boy.drawMan();
 
     }
