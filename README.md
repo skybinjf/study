@@ -1,9 +1,14 @@
-### annotation
+### annotation 注解
 注解分为三步：
 
 - 定义注解
 - 使用注解
 - 使用注解
 
-### arithmetic
-算法
+### arithmetic 算法
+- 菲波拉契数列问题
+- 素数
+
+### patterns 设计模式
+- 单例设计模式
+- 工厂设计模式
