@@ -26,7 +26,7 @@ public class SingletonLazy {
         if(instance == null){
             // 注意：不能直接 return new SingletonLazy();
             instance = new SingletonLazy();
-            return instance;
+//            return instance;
         }
         return instance;
     }

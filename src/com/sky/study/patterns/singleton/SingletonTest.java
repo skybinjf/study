@@ -27,6 +27,24 @@ public class SingletonTest {
             System.out.println("sl3 和 sl4 不是同一个实例");
         }
 
+        // 低性能不同步
+        SingletonSync1 ss1 = SingletonSync1.getInstance();
+        SingletonSync1 ss2 = SingletonSync1.getInstance();
+        if(ss1 == ss2){
+            System.out.println("ss1 和 ss2 是同一个实例");
+        }else {
+            System.out.println("ss1 和 ss2 不是同一个实例");
+        }
+
+        // 高性能同步
+        SingletonSync2 ss3 = SingletonSync2.getInstance();
+        SingletonSync2 ss4 = SingletonSync2.getInstance();
+        if(ss3 == ss4){
+            System.out.println("ss3 和 ss4 是同一个实例");
+        }else {
+            System.out.println("ss3 和 ss4 不是同一个实例");
+        }
+
     }
 
 }
