@@ -22,16 +22,16 @@ public class SimpleFactoryTest {
         Product productA2 = SimpleFactory.createProduct("A");
         Product productB2 = SimpleFactory.createProduct("B");
 
-        System.out.println("productA1: ");
+        System.out.println("productA1: " + productA1);
         productA1.user();
 
-        System.out.println("productB1: ");
+        System.out.println("productB1: " + productB1);
         productB1.user();
 
-        System.out.println("productA2: ");
+        System.out.println("productA2: " + productA2);
         productA2.user();
 
-        System.out.println("productB2: ");
+        System.out.println("productB2: " + productB2);
         productB2.user();
     }
 
