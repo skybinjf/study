@@ -9,11 +9,11 @@ package com.study.pattern.graphic.creational.factory.abstracts;
 public class ConcreteFactory1 implements AbstractFactory {
     @Override
     public AbstractProductA createProductA() {
-        return null;
+        return new ConcreteProductA1();
     }
 
     @Override
     public AbstractProductB createProductB() {
-        return null;
+        return new ConcreteProductB1();
     }
 }

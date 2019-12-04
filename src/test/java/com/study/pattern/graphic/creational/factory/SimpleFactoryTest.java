@@ -1,5 +1,7 @@
-package com.study.pattern.graphic.creational.factory.simple;
+package com.study.pattern.graphic.creational.factory;
 
+import com.study.pattern.graphic.creational.factory.simple.Product;
+import com.study.pattern.graphic.creational.factory.simple.SimpleFactory;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

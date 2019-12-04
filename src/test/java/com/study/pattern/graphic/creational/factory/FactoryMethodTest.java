@@ -1,5 +1,9 @@
-package com.study.pattern.graphic.creational.factory.method;
+package com.study.pattern.graphic.creational.factory;
 
+import com.study.pattern.graphic.creational.factory.method.DatabaseLogFactory;
+import com.study.pattern.graphic.creational.factory.method.FileLogFactory;
+import com.study.pattern.graphic.creational.factory.method.Log;
+import com.study.pattern.graphic.creational.factory.method.LogFactory;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
