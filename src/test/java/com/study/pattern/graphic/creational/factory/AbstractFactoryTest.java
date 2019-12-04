@@ -16,16 +16,14 @@ public class AbstractFactoryTest {
     @Test
     public void testAbstractFactory() {
         AbstractFactory abstractFactory1 = new ConcreteFactory1();
-        AbstractFactory abstractFactory2 = new ConcreteFactory2();
-
         AbstractProductA abstractProductA1 = abstractFactory1.createProductA();
         AbstractProductB abstractProductB1 = abstractFactory1.createProductB();
-
-        AbstractProductA abstractProductA2 = abstractFactory2.createProductA();
-        AbstractProductB abstractProductB2 = abstractFactory2.createProductB();
-
         abstractProductA1.use();
         abstractProductB1.eat();
+
+        AbstractFactory abstractFactory2 = new ConcreteFactory2();
+        AbstractProductA abstractProductA2 = abstractFactory2.createProductA();
+        AbstractProductB abstractProductB2 = abstractFactory2.createProductB();
         abstractProductA2.use();
         abstractProductB2.eat();
     }
