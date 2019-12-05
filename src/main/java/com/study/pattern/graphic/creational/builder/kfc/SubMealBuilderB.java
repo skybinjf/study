@@ -1,7 +1,7 @@
 package com.study.pattern.graphic.creational.builder.kfc;
 
 /**
- * //TODO
+ * 具体建造者-生产食物套餐 B
  *
  * @author Sky
  * @date 2019-12-04 19:43.
