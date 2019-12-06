@@ -37,4 +37,10 @@ public class BuilderTest {
         Meal mealB = kfcWatier.buildMeal();
         System.out.println("mealB: " + mealB.toString());
     }
+
+    @Test
+    public void testUser() {
+        User sky = new User.UserBuilder("Sky", "Bin").setAge(23).setPhone("15659820000").setAddress("深圳市南山区").build();
+        System.out.println(sky.toString());
+    }
 }
