@@ -8,8 +8,8 @@ package com.study.pattern.graphic.creational.factory.simple;
  * @date 2019-11-01 16:22.
  */
 public class SimpleFactory {
-    private final static String concreteProductA = "A";
-    private final static String concreteProductB = "B";
+    private final static String CONCRETE_PRODUCT_A = "A";
+    private final static String CONCRETE_PRODUCT_B = "B";
 
     /**
      * 根据产品名称创建产品对象
@@ -17,9 +17,9 @@ public class SimpleFactory {
      * @return
      */
     public static Product createProduct(String productName) {
-        if (concreteProductA.equals(productName)) {
+        if (CONCRETE_PRODUCT_A.equals(productName)) {
             return new ConcreteProductA();
-        } else if (concreteProductB.equals(productName)) {
+        } else if (CONCRETE_PRODUCT_B.equals(productName)) {
             return new ConcreteProductB();
         } else {
             return null;
