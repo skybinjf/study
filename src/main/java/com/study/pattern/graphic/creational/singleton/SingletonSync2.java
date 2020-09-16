@@ -1,4 +1,4 @@
-package com.study.pattern.singleton;
+package com.study.pattern.graphic.creational.singleton;
 
 /**
  * 多线程时同步单实例类，高性能（适合多线程中使用）
@@ -8,9 +8,10 @@ package com.study.pattern.singleton;
  **/
 public class SingletonSync2 {
 
-    // volatile 保证了不同线程对这个变量进行操作时的可见性，即一个线程修改了某个变量的值，这新值对其他线程来说是立即可见的
-    private volatile static SingletonSync2 singletonSync2 = null;
     private SingletonSync2(){}
+
+    /** volatile 保证了不同线程对这个变量进行操作时的可见性，即一个线程修改了某个变量的值，这新值对其他线程来说是立即可见的 */
+    private volatile static SingletonSync2 singletonSync2 = null;
 
     /**
      * 方法不同步，先检查实例，不存在时再进入同步区

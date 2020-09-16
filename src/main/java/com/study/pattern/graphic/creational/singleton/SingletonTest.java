@@ -1,4 +1,4 @@
-package com.study.pattern.singleton;
+package com.study.pattern.graphic.creational.singleton;
 
 /**
  * 测试单例模式

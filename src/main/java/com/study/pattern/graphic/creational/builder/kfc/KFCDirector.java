@@ -6,7 +6,7 @@ package com.study.pattern.graphic.creational.builder.kfc;
  * @author Sky
  * @date 2019-12-04 19:38.
  */
-public class KFCWatier {
+public class KFCDirector {
 
     private MealBuilder mealBuilder;
 

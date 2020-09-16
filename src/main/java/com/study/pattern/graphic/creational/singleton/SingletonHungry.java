@@ -1,4 +1,4 @@
-package com.study.pattern.singleton;
+package com.study.pattern.graphic.creational.singleton;
 
 /**
  * 单例模式，在配置文件、工具类、线程池、缓存、日志对象等场景中适合使用

@@ -27,7 +27,7 @@ public class BuilderTest {
     @Test
     public void testKFC() {
         MealBuilder mealBuilderA = new SubMealBuilderA();
-        KFCWatier kfcWatier = new KFCWatier();
+        KFCDirector kfcWatier = new KFCDirector();
         kfcWatier.setMealBuilder(mealBuilderA);
         Meal mealA = kfcWatier.buildMeal();
         System.out.println("mealA: " + mealA.toString());
