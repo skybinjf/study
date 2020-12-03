@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 分页类
+ * 分页类，对 List<T> 进行分页
  *
  * @author Sky
  * @date 2020-12-02 18:48.
@@ -24,6 +24,40 @@ public class Pager<T> implements Serializable {
     private List<T> dataList;
 
     public Pager() {
+    }
+
+    /**
+     * 计算页数和总数
+     * @param pageNum 第几页
+     * @param pageSize 每页显示多少条记录
+     * @param sourceList 需要分页的总数据
+     */
+    public Pager(int pageNum, int pageSize, List<T> sourceList) {
+        if (sourceList == null) {
+            return ;
+        }
+        // 总记录数
+        this.totalRecord = sourceList.size();
+        // 每页显示多少条记录
+        this.pageSize = pageSize;
+        // 总页数
+        this.totalPage = this.totalRecord / this.pageSize;
+        if (this.totalRecord % this.pageSize != 0) {
+            this.totalPage = this.totalPage + 1;
+        }
+        // 当前第几页
+        this.currentPage = this.totalPage < pageNum ? this.totalPage : pageNum;
+
+        // 起始索引
+        int fromIndex = this.pageSize * (this.currentPage - 1);
+        // 结束索引
+        int toIndex;
+        if (this.pageSize * this.currentPage > this.totalRecord) {
+            toIndex = this.totalRecord;
+        } else {
+            toIndex = this.pageSize * this.currentPage;
+        }
+        this.dataList = sourceList.subList(fromIndex, toIndex);
     }
 
     public Pager(int pageSize, int currentPage, int totalRecord, int totalPage, List<T> dataList) {
